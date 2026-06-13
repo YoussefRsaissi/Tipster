@@ -1,0 +1,30 @@
+.burger {
+  display: none;
+  cursor: pointer;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #111827;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px;
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  nav.active ul {
+    display: flex;
+  }
+  .burger {
+    display: block;
+  }
+}
